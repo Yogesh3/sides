@@ -1,0 +1,45 @@
+#####Cubes making parameters#####
+
+sides_cat_path = "/data/SIDES/PYSIDES_ORIGINAL_OUTPUTS/pySIDES_from_original.fits"
+
+pixel_size = 5 #arcsec
+
+#use only if catalogue does not contains sky coordinates to create a square field
+field_size = 1.9599999999999997 #deg2 
+
+#Instrument's parameters
+
+freq_min = 125e9 #Hz
+freq_max = 305e9 #Hz
+freq_resol = 1e9 #Hz
+
+telescop_diameter = 12 #m
+
+#################################
+
+
+#####Cubes output parameters#####
+
+run_name = "pySIDES_from_original_CONCERTO"
+
+output_path = '/data/SIDES/PYSIDES_ORIGINAL_OUTPUTS/CUBES/'
+
+#choose the type of cube to generate (beam-smoothed or not and the unit); you can select several type of cubes at the same times!
+save_cube_nobeam_Jy_pix     = True #This one is always computed as a starting point, but it does not need to be saved
+gen_cube_nobeam_MJy_sr	    = True
+gen_cube_smoothed_Jy_beam   = True
+gen_cube_smoothed_MJy_sr = True
+
+
+#choose the [CII] recipe used to generate the cubes (both can be True)
+gen_cube_CII_de_Looze = True
+gen_cube_CII_Lagache  = True
+
+#Choose the cubes to save
+save_each_transition  = True	#save the cubes for each tranistion (CO10, CO21, [CI]10, [CI]21...)
+save_each_line 	      = True 	#save the cubes for each line (CO, [CI], [CII])
+save_continuum_only   = True	#save the cube(s) with only continuum
+save_all_lines	      = True	#save the cube(s) with all the lines
+save_full 	      = True	#save the full cube(s) with everything
+
+##############################
