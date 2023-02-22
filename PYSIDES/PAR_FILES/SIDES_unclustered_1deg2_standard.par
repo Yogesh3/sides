@@ -1,6 +1,6 @@
 #####Output parameters########
 
-output_path = '/data/SIDES/PYSIDES_ORIGINAL_OUTPUTS/'
+output_path = '/project/r/rbond/ymehta3/SIDES/PYSIDES_ORIGINAL_OUTPUTS/'
 run_name = 'Unclustered_1deg2'
 
 gen_fits = True
