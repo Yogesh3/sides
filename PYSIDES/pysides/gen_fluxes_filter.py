@@ -2,6 +2,7 @@ from time import time
 import numpy as np
 import pandas as pd
 import pickle
+import os
 
 from astropy.cosmology import Planck15 as cosmo
 
@@ -25,6 +26,10 @@ def gen_fluxes_filter(cat, params):
     for filter_name in filter_list:
 
         filename = grid_filter_path+filter_name+'.p'
+
+        if os.path.isfile(filename) == False:
+            print(f'The {filter_name} filter does not exist at {filename}')
+            continue
 
         print('Load the grid for the '+filter_name+' filter ('+filename+')...' )
 
