@@ -69,7 +69,7 @@ def gen_fluxes(cat, params):
     Snu_arr = gen_Snu_arr(params['lambda_list'], SED_dict, cat["redshift"], cat['mu']*cat["LIR"], cat["Umean"], cat["Dlum"], cat["issb"]) 
 
     for i in range(0,len(params['lambda_list'])): #option for cubes: pas d'assigne else gensnuarr sum=true
-        kwargs = {'S{:d}'.format(params['lambda_list'][i]) : Snu_arr[:,i]}
+        kwargs = {'S{:d} (Jy)'.format(params['lambda_list'][i]) : Snu_arr[:,i].value}
         cat = cat.assign(**kwargs)
 
     #generate LFIR (40-400 microns)
