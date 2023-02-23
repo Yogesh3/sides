@@ -28,7 +28,7 @@ def gen_fluxes_filter(cat, params):
         filename = grid_filter_path+filter_name+'.p'
 
         if os.path.isfile(filename) == False:
-            print(f'The {filter_name} filter does not exist at {filename}')
+            print(f'The {filter_name} filter grid does not exist at {filename}')
             continue
 
         print('Load the grid for the '+filter_name+' filter ('+filename+')...' )
