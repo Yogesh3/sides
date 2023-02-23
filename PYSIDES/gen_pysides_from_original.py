@@ -7,7 +7,7 @@ from pysides.gen_fluxes_filter import *
 from pysides.gen_lines import *
 from pysides.gen_outputs import *
 
-csv_idl_path = '/data/SIDES/CESAM/SIDES_Bethermin2017_corr.csv'
+csv_idl_path = '/home/r/rbond/ymehta3/sides/PYSIDES/SIDES_Bethermin2017_short.csv'
 
 params = load_params('PAR_FILES/SIDES_from_original.par')
 
