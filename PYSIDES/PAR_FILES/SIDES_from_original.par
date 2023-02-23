@@ -79,7 +79,7 @@ sigma_logUmean = 0.2
 
 ################ Parameters to generate fluxes through filters #######
 
-grid_filter_path = 'pysides/SEDfiles/GRID_FILTER/'
+grid_filter_path = '/project/r/rbond/ymehta3/output/SIDES/SEDfiles/GRID_FILTER/'
 filter_list = ['MIPS24', 'PACS70', 'PACS100', 'PACS160', 'SPIRE250', 'SPIRE350', 'SPIRE500', 'NIKA1200', 'NIKA2000']
 
 ######################################################################
